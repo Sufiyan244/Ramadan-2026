@@ -1,0 +1,157 @@
+:root {
+    --gold: #D4AF37;
+    --gold-light: #F4DF4E;
+    --dark-blue: #0F172A;
+    --night-blue: #1E1B4B;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background: radial-gradient(circle at bottom, #1E1B4B 0%, #0F172A 100%);
+    color: white;
+    overflow-x: hidden;
+}
+
+.arabic-text {
+    font-family: 'Amiri', serif;
+}
+
+/* Lantern Animation */
+.lantern-container {
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    transform-origin: top center;
+    animation: swing 3s infinite ease-in-out alternate;
+}
+
+.lantern-container:nth-child(2) {
+    animation-duration: 3.5s;
+    animation-delay: 0.5s;
+}
+
+.lantern-container:nth-child(3) {
+    animation-duration: 4s;
+    animation-delay: 1s;
+}
+
+@keyframes swing {
+    0% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(5deg);
+    }
+}
+
+/* Glow Effect */
+.glow-text {
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.5), 0 0 20px rgba(212, 175, 55, 0.3);
+}
+
+/* Stars Background */
+.stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    background-image:
+        radial-gradient(2px 2px at 20px 30px, #eee, rgba(0, 0, 0, 0)),
+        radial-gradient(2px 2px at 40px 70px, #fff, rgba(0, 0, 0, 0)),
+        radial-gradient(2px 2px at 50px 160px, #ddd, rgba(0, 0, 0, 0)),
+        radial-gradient(2px 2px at 90px 40px, #fff, rgba(0, 0, 0, 0)),
+        radial-gradient(2px 2px at 130px 80px, #fff, rgba(0, 0, 0, 0));
+    background-repeat: repeat;
+    background-size: 200px 200px;
+    opacity: 0.3;
+    animation: twinkle 5s infinite;
+}
+
+@keyframes twinkle {
+    0% {
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 0.3;
+    }
+}
+
+/* Glassmorphism Card */
+.glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.6s ease;
+    opacity: 0;
+    /* Initial state for scroll reveal */
+    transform: translateY(20px);
+}
+
+.glass-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.glass-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--gold);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0F172A;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4B5563;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--gold);
+}
+
+.crescent-moon {
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.5));
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Detailed Mosque Landscape */
+.mosque-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    pointer-events: none;
+    z-index: -1;
+    opacity: 0.9;
+}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramadan Mubarak 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="antialiased min-h-screen relative">
+
+    <!-- Background Elements -->
+    <div class="stars"></div>
+
+    <!-- Hanging Lanterns (SVG) -->
+    <div class="hidden md:block">
+        <div class="lantern-container" style="left: 10%; height: 200px;">
+            <svg width="60" height="200" viewBox="0 0 60 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="30" y1="0" x2="30" y2="100" stroke="#D4AF37" stroke-width="2" />
+                <path d="M15 100 L45 100 L55 120 L5 120 Z" fill="#D4AF37" />
+                <rect x="5" y="120" width="50" height="60" rx="5" fill="rgba(212, 175, 55, 0.2)" stroke="#D4AF37"
+                    stroke-width="2" />
+                <rect x="20" y="130" width="20" height="40" rx="2" fill="#F4DF4E" class="animate-pulse" />
+                <path d="M5 180 L30 200 L55 180 Z" fill="#D4AF37" />
+            </svg>
+        </div>
+        <div class="lantern-container" style="right: 15%; height: 150px;">
+            <svg width="50" height="150" viewBox="0 0 60 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="30" y1="0" x2="30" y2="80" stroke="#D4AF37" stroke-width="2" />
+                <path d="M15 80 L45 80 L55 100 L5 100 Z" fill="#D4AF37" />
+                <rect x="5" y="100" width="50" height="50" rx="5" fill="rgba(212, 175, 55, 0.2)" stroke="#D4AF37"
+                    stroke-width="2" />
+                <circle cx="30" cy="125" r="10" fill="#F4DF4E" class="animate-pulse" />
+                <path d="M5 150 L30 170 L55 150 Z" fill="#D4AF37" />
+            </svg>
+        </div>
+        <div class="lantern-container" style="right: 5%; height: 250px;">
+            <svg width="70" height="250" viewBox="0 0 60 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="30" y1="0" x2="30" y2="120" stroke="#D4AF37" stroke-width="2" />
+                <path d="M15 120 L45 120 L55 140 L5 140 Z" fill="#D4AF37" />
+                <rect x="5" y="140" width="50" height="70" rx="5" fill="rgba(212, 175, 55, 0.2)" stroke="#D4AF37"
+                    stroke-width="2" />
+                <rect x="25" y="150" width="10" height="50" rx="2" fill="#F4DF4E" class="animate-pulse" />
+                <path d="M5 210 L30 230 L55 210 Z" fill="#D4AF37" />
+            </svg>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="relative z-50 px-6 py-6 flex justify-between items-center max-w-7xl mx-auto">
+        <div class="text-2xl font-bold text-amber-400 glow-text flex items-center gap-2">
+            <i class="fas fa-moon"></i> Ramadan 2026
+        </div>
+        <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest text-gray-300">
+            <a href="#home" class="hover:text-amber-400 transition-colors">Home</a>
+            <a href="#about" class="hover:text-amber-400 transition-colors">About</a>
+            <a href="#duas" class="hover:text-amber-400 transition-colors">Daily Duas</a>
+            <a href="#timings" class="hover:text-amber-400 transition-colors">Timings</a>
+        </div>
+        <button class="md:hidden text-white"
+            onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+            <i class="fas fa-bars text-2xl"></i>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu"
+        class="hidden md:hidden absolute top-20 left-0 w-full bg-slate-900 z-40 border-b border-white/10 p-4">
+        <div class="flex flex-col space-y-4 text-center">
+            <a href="#home" class="block text-gray-300 hover:text-amber-400">Home</a>
+            <a href="#about" class="block text-gray-300 hover:text-amber-400">About</a>
+            <a href="#duas" class="block text-gray-300 hover:text-amber-400">Duas</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <header id="home" class="relative z-20 min-h-[90vh] flex flex-col items-center justify-center text-center px-4">
+
+        <!-- Crescent Moon SVG -->
+        <div class="crescent-moon mb-8">
+            <svg width="120" height="120" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M85.3553 47.3553C85.3553 68.3421 68.3421 85.3553 47.3553 85.3553C26.3685 85.3553 9.35533 68.3421 9.35533 47.3553C9.35533 34.698 15.5451 23.4796 25.0768 16.4947C23.0805 20.3752 21.9566 24.7735 21.9566 29.434C21.9566 53.9786 41.8551 73.8771 66.3996 73.8771C74.6592 73.8771 82.3937 71.6253 89.0494 67.6896C86.6859 67.6896 85.3553 47.3553 85.3553 47.3553Z"
+                    fill="#F4DF4E" stroke="#D4AF37" stroke-width="2" />
+            </svg>
+        </div>
+
+        <h2 class="text-amber-400 text-xl md:text-2xl font-light mb-2 tracking-[0.2em] uppercase">The Holy Month</h2>
+        <h1 class="text-6xl md:text-8xl font-bold mb-6 text-white glow-text arabic-text">رمضان مبارك</h1>
+        <p class="text-2xl md:text-4xl font-light mb-8 text-gray-200">Ramadan Mubarak</p>
+        <p class="max-w-2xl text-gray-300 text-lg mb-10 leading-relaxed">
+            May this Ramadan bring you peace, prosperity, and spiritual growth.
+            May Allah accept your fasts and prayers.
+        </p>
+
+        <!-- Countdown -->
+        <div class="glass-card px-8 py-6 rounded-2xl mb-20 w-full max-w-3xl visible">
+            <h3 class="text-amber-400 uppercase tracking-widest text-sm mb-4">Time Remaining Until Eid-ul-Fitr (Est.)
+            </h3>
+            <div class="grid grid-cols-4 gap-4 text-center">
+                <div>
+                    <span id="days" class="block text-3xl md:text-5xl font-bold">00</span>
+                    <span class="text-xs md:text-sm text-gray-400 uppercase">Days</span>
+                </div>
+                <div>
+                    <span id="hours" class="block text-3xl md:text-5xl font-bold">00</span>
+                    <span class="text-xs md:text-sm text-gray-400 uppercase">Hours</span>
+                </div>
+                <div>
+                    <span id="minutes" class="block text-3xl md:text-5xl font-bold">00</span>
+                    <span class="text-xs md:text-sm text-gray-400 uppercase">Minutes</span>
+                </div>
+                <div>
+                    <span id="seconds" class="block text-3xl md:text-5xl font-bold text-amber-400">00</span>
+                    <span class="text-xs md:text-sm text-gray-400 uppercase">Seconds</span>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- Daily Duas Section -->
+    <section id="duas" class="relative z-20 py-20 bg-slate-900/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-amber-400 font-bold tracking-widest uppercase">Spiritual Reflection</span>
+                <h2 class="text-4xl font-bold mt-2 mb-4 text-white">Daily Duas</h2>
+                <div class="h-1 w-20 bg-amber-400 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Dua 1: Iftar -->
+                <div class="glass-card p-8 rounded-2xl text-center">
+                    <div
+                        class="w-12 h-12 bg-amber-400/20 rounded-full flex items-center justify-center mx-auto mb-4 text-amber-400">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-amber-100">Dua for Breaking Fast (Iftar)</h3>
+                    <p class="arabic-text text-3xl mb-4 leading-relaxed" dir="rtl">اللَّهُمَّ اِنِّى لَكَ صُمْتُ وَبِكَ
+                        امنْتُ وَعَليْكَ تَوَكّلتُ وَ عَلى رِزْقِكَ اَفْطَرْتُ</p>
+                    <p class="text-sm text-gray-400 italic mb-4">"Allahumma inni laka sumtu wa bika aamantu wa 'alayka
+                        tawakkaltu wa 'alaa rizqika aftartu"</p>
+                    <p class="text-gray-300">"O Allah! I fasted for You and I believe in You and I put my trust in You
+                        and I break my fast with Your sustenance."</p>
+                </div>
+
+                <!-- Dua 2: Suhoor -->
+                <div class="glass-card p-8 rounded-2xl text-center">
+                    <div
+                        class="w-12 h-12 bg-amber-400/20 rounded-full flex items-center justify-center mx-auto mb-4 text-amber-400">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-amber-100">Intention for Fasting (Suhoor)</h3>
+                    <p class="arabic-text text-3xl mb-4 leading-relaxed" dir="rtl">وَبِصَوْمِ غَدٍ نَّوَيْتُ مِنْ شَهْرِ
+                        رَمَضَانَ</p>
+                    <p class="text-sm text-gray-400 italic mb-4">"Wa bisawmi ghadinn nawaiytu min shahri ramadan"</p>
+                    <p class="text-gray-300">"I intend to keep the fast for tomorrow in the month of Ramadan."</p>
+                </div>
+
+                <!-- Dua 3: Ashra 1 -->
+                <div class="glass-card p-8 rounded-2xl text-center">
+                    <div
+                        class="w-12 h-12 bg-amber-400/20 rounded-full flex items-center justify-center mx-auto mb-4 text-amber-400">
+                        <i class="fas fa-hands-praying"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-amber-100">First Ashra (Mercy)</h3>
+                    <p class="arabic-text text-3xl mb-4 leading-relaxed" dir="rtl">رَبِّ اغْفِرْ وَارْحَمْ وَأَنْتَ
+                        خَيْرُ الرَّاحِمِينَ</p>
+                    <p class="text-sm text-gray-400 italic mb-4">"Rabbighfir warham wa anta khair-ur-raahimeen"</p>
+                    <p class="text-gray-300">"O! My Lord forgive and have Mercy and You are the Best of Merciful."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="relative z-20 bg-slate-950 py-12 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="text-2xl font-bold text-amber-400 mb-6 font-serif">Ramadan Mubarak</div>
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="#" class="text-gray-400 hover:text-white transition-colors"><i
+                        class="fab fa-twitter text-xl"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors"><i
+                        class="fab fa-instagram text-xl"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors"><i
+                        class="fab fa-facebook text-xl"></i></a>
+            </div>
+            <p class="text-gray-500 text-sm">
+                &copy; 2026 Ramadan Special. All rights reserved. <br>
+                Designed by Sufiyan Shahid Dev with <i class="fas fa-heart text-red-500"></i> for the Ummah.
+            </p>
+        </div>
+    </footer>
+
+</body>
+<script src="app.js"></script>
+</html>
